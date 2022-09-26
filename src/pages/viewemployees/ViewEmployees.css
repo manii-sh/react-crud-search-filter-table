@@ -1,0 +1,52 @@
+:root {
+    --alternate: lightgrey;
+    --head: rgb(0, 162, 255);
+}
+
+.viewEmpPage {
+  width: 100%;
+  height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: center;
+}
+
+.tableComp {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 15rem);
+    margin: 25px 0;
+}
+
+.tableCSS {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+    background-color: var(--head);
+    color: black;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+th:not(:last-child) {
+    padding: 12px 15px;
+    border-right: 1px solid black;
+}
+
+td {
+  text-align: center;
+  padding: 12px 15px;
+}
+
+.rowsCss:nth-of-type(even) {
+    background-color: var(--alternate);
+}
+
+.actionIcons {
+    cursor: pointer;
+}

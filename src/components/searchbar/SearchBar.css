@@ -1,0 +1,25 @@
+:root {
+    --searchColor: rgb(218, 216, 216);
+}
+
+.SearchBar {
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--searchColor);
+    border-radius: 5px;
+}
+
+.searchField {
+    width: 20rem;
+    height: 2rem;
+    padding: 3px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--searchColor);
+}
+
+.clearIconStyle {
+    cursor: pointer;
+}
